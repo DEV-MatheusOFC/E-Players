@@ -251,7 +251,7 @@ footer ul{
 footer .sociais{
     display: flex;
     justify-content: space-evenly;
-    /* color: var(--purple); */
+    color: var(--gradient);
     font-size: 2em;
     padding: 1.2em 0px;
     background: -webkit-linear-gradient(#FC1E8B, #7278C3, #00A8DC);
@@ -278,4 +278,22 @@ footer h6{
 footer p{
     text-align: center;
     color: #474747;
+}
+
+/* Página Cadastro ~ A Seguir: */
+
+.titulo_pagina{
+    margin-top: 15px;
+    width: 100%;
+    height: 300px;
+    background-image: url(../Images/cadastro.png);
+    background-attachment: fixed;
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    text-transform: uppercase;
+    padding-top: 75px;
 }
