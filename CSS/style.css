@@ -376,3 +376,49 @@ fieldset label{
     margin-top: 2em;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px){
+    .campea{
+        right: 0%;
+    }
+
+    .sobre .container div{
+        width: 50%;
+    }
+
+    .container{
+        width: 95%;
+    }
+
+    body{
+        background-color: var(--blue);
+    }
+}
+/* Fim media max 1200px */
+
+@media screen and (max-width: 768px){
+    header img{
+        max-width: 100px;
+    }
+
+    .container{
+        width: 98%;
+    }
+
+    .campea{
+        max-width: 500px;
+        margin-top: 50px;
+        right: -50px;
+    }
+
+    .sobre .container div{
+        width: 55%;
+        margin-left: 30px;
+    }
+
+    body{
+        background-color: var(--purple);
+    }
+}
+
+/*  Fim média max 768px */
