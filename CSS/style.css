@@ -390,15 +390,12 @@ fieldset label{
         width: 95%;
     }
 
-    body{
-        background-color: var(--blue);
-    }
 }
 /* Fim media max 1200px */
 
 @media screen and (max-width: 768px){
     header img{
-        max-width: 100px;
+        max-width: 180px;
     }
 
     .container{
@@ -408,7 +405,7 @@ fieldset label{
     .campea{
         max-width: 500px;
         margin-top: 50px;
-        right: -50px;
+        right: -100px;
     }
 
     .sobre .container div{
@@ -416,9 +413,57 @@ fieldset label{
         margin-left: 30px;
     }
 
-    body{
-        background-color: var(--purple);
+
+    #horarios .container{
     }
+
+    .ao_vivo{
+        padding: 0.3em 5px;
+        flex-grow: 1;
+        width: 50%;
+        justify-content: center;
+
+    }
+
+    .em_breve{
+        width: 50%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .em_breve .partida{
+        margin: 0.5em 0;
+    }
+
+    /* Seção Noticias */
+    .noticia{
+        flex-direction: column;
+    }
+
+    .card{
+        display: flex;
+        width: 100%;
+    }
+
+    .card img{
+        width: 30%;
+    }
+
+    footer .container{
+        padding-top: 0.3em;
+        width: 94%;
+    }
+
+    .mob_logo_sociais{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mob_logo_sociais img{
+        max-width: 180px;
+    }
+
 }
 
 /*  Fim média max 768px */
