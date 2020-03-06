@@ -14,11 +14,16 @@
 
     <header>
         <div class="container cabecalho">
-            <a href="index.html">
-                <img src="Images/Logo.svg" alt="Logo do Sit E-Players">
-            </a>
-            <i class="fas fa-bars"></i>
-            <nav>
+            <div>
+                <a href="#" onclick="botaoMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+
+                <a href="index.html">
+                    <img src="Images/Logo.svg" alt="Logo do Sit E-Players">
+                </a>
+            </div>
+            <nav id="menu">
                 <ul>
                     <li><a href="index.html" title="Voltar para a página inicial">INÍCIO</a></li>
                     <li><a href="#horarios" title="Ir até a sessão de horários das partidas">HORÁRIOS</a></li>
@@ -304,7 +309,17 @@
         </div>
         <p>© Copyright 2001-2020 SENAI Eletronic Sports - All Rights Reserved</p>
     </footer>
+    <script>
 
+    function botaoMenu(){
+        var m = document.getElementById("menu");
+        if(m.style.display == "block"){
+            m.style.display = "none";
+        }else{
+            m.style.display = "block"
+        }
+    }
+    </script>
 </body>
 
 </html>

@@ -70,7 +70,6 @@ ul{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
-    /* margin-top: 20px; */
 }
 
 .btn{
@@ -377,6 +376,12 @@ fieldset label{
     cursor: pointer;
 }
 
+.cabecalho .fa-bars{
+    color: var(--purple);
+    font-size: 2em;
+    display: none;
+}
+
 @media screen and (max-width: 1200px){
     .campea{
         right: 0%;
@@ -411,10 +416,6 @@ fieldset label{
     .sobre .container div{
         width: 55%;
         margin-left: 30px;
-    }
-
-
-    #horarios .container{
     }
 
     .ao_vivo{
@@ -469,5 +470,51 @@ fieldset label{
 /*  Fim média max 768px */
 
 @media screen and (max-width: 460px){
+    .cabecalho .fa-bars{
+        display: block;
+    }
 
+    .cabecalho div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 2em;
+    }
+    #menu{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: var(--background);
+        width: 35%;
+        height: 250px;
+        display: none;
+
+    }
+
+    .cabecalho ul{
+        flex-direction: column;
+        height: 250px;
+    }
+
+    .cabecalho ul a{
+        padding:  0.5em 80% 0.5em 0.5em;
+        margin: 0.1em;
+        margin-left: 2em;
+    }
+
+    .campea{
+        display: none;
+    }
+
+    .banner{
+        margin-top: -60px;
+        max-width: 460px;
+        background-repeat: no-repeat;
+        background-size: 460px;
+    }
+
+    .banner .btn{
+        margin-top: 150px;
+    }
 }
